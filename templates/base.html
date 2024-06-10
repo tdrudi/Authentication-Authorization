@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Flask Feedback</title>
+    </head>
+
+<body>
+    {% if 'username' in session %}
+        <a href="/logout">Logout</a>
+    {% else %}
+        <a href="/login">Login</a>
+    {% endif %}
+
+    {% block content%}
+    <!--Content Goes Here-->
+    {% endblock %}
+
+</body>
+    </html>
